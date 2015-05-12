@@ -1,3 +1,5 @@
 var GameRulesManager = function() {
-    console.log("TEST");  
+    this.willReturnTrue = function() {
+        return true;
+    };
 };

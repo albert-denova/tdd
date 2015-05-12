@@ -7,5 +7,5 @@ QUnit.testStart(function( details ) {
 
 // Tests
 QUnit.test( "DummyTest", function( assert ) {
-  assert.ok( 1 == "1", "Passed!" );
+  assert.ok(gamesRulesManager.willReturnTrue(), "Passed!" );
 });
