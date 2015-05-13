@@ -6,6 +6,11 @@ QUnit.testStart(function( details ) {
 });
 
 // Tests
-QUnit.test( "DummyTest", function( assert ) {
-  assert.ok(gamesRulesManager.willReturnTrue(), "Passed!" );
+QUnit.test( "SimpleMovement", function( assert ) {
+  assert.ok(gamesRulesManager.makeMove(0), "Passed!" );
+});
+
+QUnit.test( "SecondSimpleMovement", function( assert ) {
+  assert.notOk(gamesRulesManager.makeMove(-1), "Passed!" );
+  assert.notOk(gamesRulesManager.makeMove(9), "Passed!" );
 });
