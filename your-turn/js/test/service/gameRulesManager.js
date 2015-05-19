@@ -6,27 +6,22 @@ QUnit.testStart(function( details ) {
 });
 
 // Tests
+QUnit.test( "AlwaysContainParameters", function( assert ) {
+    var winner = gamesRulesManager.DecideWinner();
+    assert.equal(winner, undefined);
+});
+
 QUnit.test( "RockWinsLizard", function( assert ) {
-    var winner = gamesRulesManager.DecideWinner('rock','lizard');
+    var winner = gamesRulesManager.DecideWinner('rock', 'lizard'); 
     assert.equal(winner, 'player1');
 });
 
 QUnit.test( "LizardLosesAgainstRock", function( assert ) {
-    var winner = gamesRulesManager.DecideWinner('lizard','rock');
+    var winner = gamesRulesManager.DecideWinner('lizard', 'rock'); 
     assert.equal(winner, 'player2');
 });
 
 QUnit.test( "RockWinsScissors", function( assert ) {
-    var winner = gamesRulesManager.DecideWinner('rock','scissors');
+    var winner = gamesRulesManager.DecideWinner('rock', 'scissors'); 
     assert.equal(winner, 'player1');
-});
-
-QUnit.test( "LizardWinsSpock", function( assert ) {
-    var winner = gamesRulesManager.DecideWinner('lizard','spock');
-    assert.equal(winner, 'player1');
-});
-
-QUnit.test( "SpockLosesAgainstLizard", function( assert ) {
-    var winner = gamesRulesManager.DecideWinner('spock','lizard');
-    assert.equal(winner, 'player2');
 });
