@@ -5,12 +5,12 @@ var GameRulesManager = function() {
         }
         
         var winner;
-        //if(player1Hand === 'rock' && player2Hand === 'lizard') {
+        if(player1Hand === 'rock' && player2Hand === 'lizard') {
             winner = 'player1';
-        //}
-        //else if(player1Hand === 'lizard' && player2Hand === 'rock') {
-        //    winner = 'player2';
-        //}
+        }
+        else if(player1Hand === 'lizard' && player2Hand === 'rock') {
+            winner = 'player2';
+        }
         
         return winner;
     };

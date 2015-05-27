@@ -12,7 +12,7 @@ QUnit.test( "AlwaysContainParameters", function( assert ) {
 });
 
 QUnit.test( "RockWinsLizard", function( assert ) {
-    var winner = gamesRulesManager.DecideWinner(['rock', 'lizard']); 
+    var winner = gamesRulesManager.DecideWinner('rock', 'lizard'); 
     assert.equal(winner, 'player1');
 });
 

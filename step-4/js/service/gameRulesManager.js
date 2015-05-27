@@ -11,9 +11,9 @@ var GameRulesManager = function() {
         else if(player1Hand === 'lizard' && player2Hand === 'rock') {
             winner = 'player2';
         }
-        //else if(player1Hand === 'rock' && player2Hand === 'scissors') {
-        //    winner = 'player1';    
-        //}
+        else if(player1Hand === 'rock' && player2Hand === 'scissors') {
+            winner = 'player1';    
+        }
         
         return winner;
     };
